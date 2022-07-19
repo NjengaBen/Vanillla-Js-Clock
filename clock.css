@@ -1,10 +1,10 @@
-*, *::before, *::after{
+*, *::after, *::before{
     box-sizing: border-box;    
     font-family: sans-serif;
 }
 
 body{     
-    background-image: linear-gradient(to right, aqua, lime);
+    background: linear-gradient(to right, aqua, lime);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,17 +69,17 @@ body{
     transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
 }
 
-.clock .hour-hand{
+.clock .hand.hour-hand{
     width: 10px;
     height: 35%;
     background-color: black;
 }
-.clock .minute-hand{
+.clock .hand.minute-hand{
     width: 7px;
     height: 40%;
     background-color: black;
 }
-.clock .second-hand{
+.clock .hand.second-hand{
     width: 4px;
     height: 45%;
     background-color: red;
